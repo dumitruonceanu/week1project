@@ -1,0 +1,560 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html{
+	height: 100%;
+}
+
+body{
+	font-size: 15px;
+	font-family: 'Lato', source-regular, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	line-height: 1.7;
+}
+
+h1{
+	font-family: 'Indie Flower', cursive;
+	font-size: 40px;
+	font-style: bold;
+	text-align: center;
+	margin: 0;
+	padding: 50px 0;
+}
+
+h3,
+h4{
+	margin: 0;
+	padding: 0;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+nav{
+	float: left;
+	display: block;
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.contentPages{
+	margin-bottom: 30px;
+}
+
+nav .brandLogo{
+	float: left;
+	padding-left: 60px;
+}
+
+nav .brandLogo img{
+	padding-top: 10px;
+	width: 60px;
+}
+
+.wrapper{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.leftNav{
+	float: left;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.leftNav li,
+.lowerNav li{
+	display: inline;
+	list-style-type: none;
+	float: left;
+}
+
+.leftNav li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 20px;
+	font-size: 15px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.lowerNav{
+	float: left;
+	margin-left: 40px;
+}
+
+.lowerNav li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #888;
+	padding-right: 40px;
+	padding-top: 10px;
+	font-size: 15px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#all:hover ul:hover a{
+	color: #888;
+}
+
+#all:hover li a:hover{
+	color: #fff;
+}
+
+#all:hover .lowerNav li a:hover{
+	color: #26c1d9;
+}
+
+.rightNav{
+	float: right;
+	margin: 0;
+	padding-top: 10px;
+	padding-right: 60px;
+}
+
+.rightNav ul.subNav {
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+	float:left;
+	width: 150%;
+	background-color: #000;
+	z-index: 5;
+}
+
+.rightNav ul.subNav a{
+	float: left;
+
+}
+
+.rightNav li {
+	display:inline;
+	position: relative;
+	float:left; 
+}
+
+.rightNav li a {
+	padding:10px;
+	float:left;
+	position: relative;
+	text-decoration: none;
+	color: #999;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 15px;
+	border-top: 1px solid #000;
+	z-index: 11;
+	transition: all 0.2s ease;
+}
+
+/*this is where you give the li with a class of .loc a border and make it invisible to the user by coloring it the same as the backdrop. */
+.loc a{
+	border: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.rightNav li a:hover{
+	color: #26c1d9;
+}
+
+/*general subnav styling*/
+.rightNav li ul {
+	color:white;
+	display:none;
+	position: absolute;
+	width:auto;
+	top:45px;
+	right: 0px;
+	border:1px solid #ccc;
+	background-color: #000;
+	z-index: 10;
+}
+
+.rightNav li:hover ul {
+	display:block;
+	/*border:1px solid #ccc;*/
+}
+
+/*target specifically the navbar li with the class of .loc (the one with the subnav), and give the li a border color of white (border previously set to black above), remove the bottom border and set its background color to black. */
+.rightNav .loc:hover > a{
+	border-color: #fff;
+	border-bottom: none;
+	background-color: #000;
+}
+
+/*navbar list on hover, target the <a> and give it a blue color. Remains colored while navigating subnav as well*/
+.rightNav li:hover > a{
+	color: #26c1d9;
+}
+
+
+.rightNav li ul li {
+	margin: 0;
+	padding: 0;
+	display:list-item;
+	list-style-type: none;
+	float:none;
+
+}
+.rightNav li ul li a {
+	display:block;
+	float:none;
+	color: #fff;
+}
+.rightNav li ul li a:hover {
+	background:black;
+	color: #26c1d9;
+}
+
+span.arrow {
+	font-size:10px;
+}
+
+.rightNav h3{
+	padding-left: 20px;
+	margin-top: 20px;
+	float: left;
+	font-size: 15px;
+	color: #888;
+}
+
+.topSection{
+	background-image: url(../images/IntelligentsiaMocha.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 400px;
+}
+
+.topSection h1{
+	font-family: 'Lato', source-regular, Arial, Helvetica, sans-serif;
+	padding-top: 200px;
+	padding-bottom: 0;
+	color: #fff;
+	text-shadow:1px 1px 4px black;
+}
+
+.button{
+	text-align: center;
+	height: 45px;
+	border-radius: 3px;
+	width: 220px;
+	transition: all 0.3s ease;
+}
+
+.buttonTextWrapper{
+	width: 100%;
+	height: 50%;
+	transition: all 0.3s ease;
+}
+
+.button a{
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 300%;
+	color: #fff;
+	text-shadow:1px 1px 0 #333;
+}
+
+.topSection .button:hover{
+	background-color: #000;
+	transition: all 0.3s ease;
+}
+
+
+.topSection .button{
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #26c1d9;
+	transition: all 0.3s ease;
+
+}
+
+.leftSection .button,
+.rightSection .button{
+	position: absolute;
+	top: 80px;
+	left: -110px;
+	background-color: #26c1d9;
+	transition: all 0.3s ease;
+}
+
+.leftSection .button:hover,
+.rightSection .button:hover{
+	background-color: #000;
+	transition: all 0.3s ease;
+}
+
+.leftSection{
+	display: inline-block;
+	position: relative;
+	float: left;
+	background-image: url(../images/VeniceStools.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50%;
+	height: 200px;
+}
+
+.positionWrapper{
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 100%;
+	z-index: 20;
+}
+
+.rightSection{
+	display: inline-block;
+	position: relative;
+	float: left;
+	background-image: url(../images/unsplash_52d5bbef8a613_1.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50%;
+	height: 200px;
+}
+
+.social{
+	float: left;
+	background-color: #f7f7f7;
+	width: 100%;
+	height: 80px;
+}
+
+.about{
+	display: inline-block;
+	float: left;
+}
+
+.about img,
+.pageHeadline img{
+	/*float: left;*/
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.pageHeadline p{
+	margin: 0 auto;
+	width: 65%;
+	margin-bottom: 40px;
+}
+
+.about p{
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.contactSection{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.officeInfo{
+	float: left;
+}
+
+.officeInfo p{
+	margin-top: 0px;
+}
+
+.officeInfo h3{
+	margin-bottom: 15px;
+}
+
+.officeInfo a{
+	text-decoration: none;
+	color: #26c1d9;
+}
+
+.contactForm{
+	float: right;
+}
+
+.locationInfo{
+	float: left;
+	width: 100%;
+}
+
+.locationMap{
+	float: left;
+	width: 33%;
+	background-color: #eee;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.locationMap .map{
+	width: 100%;
+}
+
+.locationDetails{
+	float: right;
+	width: 63%;
+}
+
+.locationsList{
+	float: left;
+	width: 100%;
+	/*margin: 0 auto;*/
+	margin-bottom: 40px;
+}
+
+.locationsList img{
+	width: 220px;
+	position: relative;
+}
+
+.flexWrap{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.flexWrap .flex-control-paging li a{
+	display: none;
+}
+
+.flexWrap .flexslider{
+	border: none;
+}
+
+.place{
+	display: inline-block;
+	float: left;
+	width: 220px;
+	margin: 0 auto;
+	margin-right: 40px;
+}
+
+.locationsList a:last-child .place{
+	margin-right: 0;
+}
+
+.place:hover img{
+	opacity: 0.7;
+	width: 220px;
+}
+
+.place h3, 
+.place p{
+	color: #000;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+}
+
+.socialWrapper{
+	float: right;
+	padding-top: 20px;
+	margin-right: 60px;	
+}
+
+.icon{
+	display: inline-block;
+	width: 45px;
+	height: 55px;
+	/*padding-left: 4px;*/
+	padding-top: 5px;
+	
+}
+
+.icon img{
+	width: 30px;
+}
+
+footer{
+	float: left;
+	background-image: url(../images/background.png);
+
+	/*background-color: #000;*/
+	width: 100%;
+	height: 80px;
+}
+
+.signupForm{
+	float: left;
+	padding-top: 25px;
+	padding-left: 60px;
+}
+
+input.submitButton{
+	background-color: #392f28;
+	border-radius: 4px;
+	font-size: 	14px;
+	padding: 9px;
+	color: #fff;
+	font-weight: bold;	
+	border: 1px solid #392f28;
+	margin-left: 5px;
+	transition: all 0.3s ease;
+}
+
+input.submitButton:hover{
+	background-color: #000;
+	transition: all 0.3s ease;
+}
+
+
+input.email{
+	font-size: 12px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 350px;
+	box-shadow: 0 1px 0 #fff;	
+}
+
+input.focus:focus{
+	border-color: #096EB3;
+	outline: none;
+	box-shadow: 0 0 0 2px #096EB3;
+
+}
+
+.copy{
+	float: right;
+	position: relative;
+	color: #fff;
+	font-size: 12px;
+	padding-top: 35px;
+	padding-right: 60px;
+	height: 100%;
+	vertical-align: middle;
+	text-align: 
+}

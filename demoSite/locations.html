@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coffee Shop | Locations</title>
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	<link rel="stylesheet" type="text.css" href="css/style.css">
+	<link rel="icon" type="image/png" href="icons/favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<nav>
+		<div class="brandLogo">
+			<a href="index.html"><img src="icons/icon_30932_light_blue.png"></a>
+			<!--brand logo: http://thenounproject.com/term/coffee/30932/ -->	
+		</div>
+
+		<div id="all">
+			<ul class="leftNav">
+				<li class="coffee"><a href="#">Our Coffee</a></li>
+				<li class="about"><a href="about.html">About</a></li>
+				<li class="bakery"><a href="#">Bakery</a></li>
+				<li class="menu"><a href="#">Cafe Menu</a></li>
+			</ul>
+		</div>
+
+		<ul class="rightNav">
+			<li><a href="#">Menu</a></li>
+			<li><a href="locations.html">Locations <span class="arrow">&#x25BC;</span></a>
+				<ul class="subNav">
+					<h3>Toronto</h3>
+					<li><a href="location1.html">Downtown East</a></li>
+					<li><a href="location2.html">Downtown West</a></li>
+					<li><a href="location3.html">Midtown</a></li>
+					<li><a href="location4.html">North York</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Blog</a></li>
+		</ul>
+	</nav>
+
+	<div class="wrapper">
+
+		<h1>
+			Locations
+		</h1>
+
+		<section class="pageHeadline">
+			<!-- <img src="images/VeniceStools.jpg" alt=""> -->
+
+			<div class="flexWrap">
+				<div class="flexslider">
+				  <ul class="slides">
+				    <li>
+				      <img src="images/VeniceStools.jpg" />
+				    </li>
+				    <li>
+				      <img src="images/unsplash_52d5bbef8a613_1.jpg" />
+				    </li>
+				    <li>
+				      <img src="images/IntelligentsiaMocha.jpg" />
+				    </li>
+				  </ul>
+				</div>
+			</div>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis architecto, pariatur. Maiores incidunt similique neque ex inventore at adipisci voluptatum amet, quidem, explicabo eius consequatur qui et, ipsum unde ratione.
+			</p>
+		</section>
+
+		<section class="locationsList">
+			<a href="location1.html">
+				<div class="place">
+					<img src="images/tumblr_mzoajqlusr1slhhf0o1_1280.jpg" alt="">
+					<h3>Downtown East</h3>
+					<p>482 Queen Street West <br>Toronto ON M5V 2A9</p>
+				</div>
+			</a>
+
+			<a href="location2.html">
+				<div class="place">
+					<img src="images/tumblr_n6ni6khmfG1slhhf0o2_1280.jpg" alt="">
+					<h3>Downtown West</h3>
+					<p>482 Queen Street West <br>Toronto ON M5V 2A9</p>
+				</div>
+			</a>
+
+			<a href="location3.html">
+				<div class="place">
+					<img src="images/tumblr_mzoajqlusr1slhhf0o1_1280.jpg" alt="">
+					<h3>Midtown</h3>
+					<p>482 Queen Street West <br>Toronto ON M5V 2A9</p>
+				</div>
+			</a>
+
+			<a href="location4.html">
+				<div class="place location4">
+					<img src="images/tumblr_n6ni6khmfG1slhhf0o2_1280.jpg" alt="">
+					<h3>North York</h3>
+					<p>482 Queen Street West <br>Toronto ON M5V 2A9</p>
+				</div>
+			</a>
+
+		</section>
+
+
+
+	</div>
+
+	
+
+	<section class="social">
+
+		<div id="all">
+			<ul class="lowerNav">
+				<li class="contact"><a href="contact.html">Contact</a></li>
+				<li class="specialOrders"><a href="#">Special Orders</a></li>
+				<li class="press"><a href="#">Press</a></li>
+				<li class="experience"><a href="#">Experience</a></li>
+			</ul>
+		</div>
+		
+		<div class="socialWrapper">
+			<div class="icon twitter">
+				<a href="http://twitter.com"  target="blank_"><img src="icons/icon_25838_black_fill.png" alt=""></a>
+			</div>
+			<div class="icon facebook">
+				<a href="http://facebook.com"  target="blank_"><img src="icons/icon_20845_black_fill.png" alt=""></a>
+			</div>
+			<div class="icon instagram">
+				<a href="http://instagram.com"  target="blank_"><img src="icons/icon_15266.png" alt=""></a>
+			</div>
+		</div>
+		<!-- 
+		social icons used: 
+		Twitter: http://thenounproject.com/term/twitter/25838/
+		Facebook: http://thenounproject.com/term/facebook/20845/
+		Instagram: http://thenounproject.com/term/camera/15266/
+		-->
+	</section>
+
+	<footer>
+		<div class="signupForm">
+			<form action="login.php" class="login">
+				<input type="text" name="email" class="email" placeholder="Enter email for news and updates">
+				<input type="submit" value="Sign up" class="submitButton">
+			</form>
+		</div>
+
+		<div class="copy">&copy; Copyright 2014 Coffee House, All Rights Reserved</div>
+	</footer>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>  <!-- NOTE: the plugin is dependent on jquery, so make sure jquery is loaded first before flexslider.  -->
+	<script src="js/jquery.smooth-scroll.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	    	directionNav: false, 
+	    	animation: "fade",
+	    	slideshowSpeed: 4000,
+	    	animationSpeed: 600
+	    });
+	  });
+
+	  $(document).ready(function(){
+	  	$('.nav a').smoothScroll({
+	  		offset: -60,
+	  		// easing: 'swing',
+	  		speed: 400,
+	  	});
+	  });
+	</script>
+
+
+</body>
+</html>
