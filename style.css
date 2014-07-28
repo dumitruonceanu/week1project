@@ -2,186 +2,149 @@
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 audio, canvas, progress, video {
   display: inline-block;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 [hidden], template {
-  display: none;
-}
+  display: none; }
 
 a {
-  background: 0 0;
-}
+  background: 0 0; }
 
 a:active, a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 b, strong {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
-}
+  margin: .67em 0; }
 
 mark {
   background: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
-  top: -.5em;
-}
+  top: -.5em; }
 
 sub {
-  bottom: -.25em;
-}
+  bottom: -.25em; }
 
 img {
-  border: 0;
-}
+  border: 0; }
 
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 hr {
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0; }
 
 pre {
-  overflow: auto;
-}
+  overflow: auto; }
 
 code, kbd, pre, samp {
   font-family: monospace,monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
-  margin: 0;
-}
+  margin: 0; }
 
 button {
-  overflow: visible;
-}
+  overflow: visible; }
 
 button, select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 button[disabled], html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-}
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0; }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 input[type=search] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: .35em .625em .75em;
-}
+  padding: .35em .625em .75em; }
 
 legend {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 optgroup {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 td, th {
-  padding: 0;
-}
+  padding: 0; }
 
 .clearfix:after {
   visibility: hidden;
@@ -189,117 +152,254 @@ td, th {
   font-size: 0;
   content: " ";
   clear: both;
-  height: 0;
-}
+  height: 0; }
 
 * {
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 @font-face {
   font-family: klinic;
-  src: url("fonts/klinic/KlinicSlabMedium.otf");
-}
+  src: url("fonts/klinic/KlinicSlabMedium.otf"); }
 @font-face {
   font-family: source-regular;
-  src: url("fonts/source-sans-pro/SourceSansPro-Regular.otf");
-}
+  src: url("fonts/source-sans-pro/SourceSansPro-Regular.otf"); }
+@font-face {
+  font-family: monserrat;
+  src: url("fonts/julieta-ulanovsky_montserrat/Montserrat-Regular.ttf"); }
 .blue {
-  color: #1f7f8e;
-}
+  color: #1f7f8e; }
 
 .medBeige {
-  color: #e0b152;
-}
+  color: #e0b152; }
 
 body {
   font-size: 20px;
   font-family: source-regular, Arial, Helvetica;
   /*fit body so that site is within 1000 pixels*/
-  margin: 0;
-}
-body h1,
-body h2,
-body h3 {
-  font-family: klinic, Arial, Helvetica;
-  /*position: relative;*/
-  text-align: center;
-}
-body h1 {
-  font-size: 60px;
-  color: #fff;
-}
-body h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 48px;
-  padding-top: 20px;
-}
-body h3 {
-  margin-bottom: 0;
-  font-size: 30px;
-}
-body h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-weight: 100;
-  color: #000;
-  /*   1f7f8e */
-}
-body p,
-body li {
-  line-height: 1.5;
-}
+  margin: 0; }
+  body h1,
+  body h2,
+  body h3 {
+    font-family: klinic, Arial, Helvetica;
+    /*position: relative;*/
+    text-align: center; }
+  body h1 {
+    font-size: 60px;
+    color: #fff; }
+  body h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+    padding-top: 20px; }
+  body h3 {
+    margin-bottom: 0;
+    font-size: 30px; }
+  body h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    color: #000;
+    /*   1f7f8e */ }
+  body p,
+  body li {
+    line-height: 1.5; }
 
 body,
 html {
-  height: 100%;
-}
+  height: 100%; }
 
 nav {
   width: 100%;
   background: url(images/dark-wood.jpg);
   position: fixed;
   z-index: 100;
+  text-align: center; }
+  nav li {
+    display: inline; }
+    nav li a {
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      color: #FFF;
+      padding: 30px;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      nav li a:hover {
+        color: #2284a1; }
+
+.mobileNavTest {
+  width: 100%;
+  background: url(images/dark-wood.jpg);
+  position: fixed;
+  z-index: 100;
   text-align: center;
-}
-nav li {
-  display: inline;
-}
-nav li a {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: #FFF;
-  padding: 30px;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-nav li a:hover {
-  color: #2284a1;
-}
+  font-size: 16px;
+  height: 70px; }
+  .mobileNavTest .container {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    width: 100%;
+    margin: 0 auto; }
+    .mobileNavTest .container .mobileNavButton {
+      position: relative;
+      display: inline-block;
+      float: left;
+      width: 110px;
+      height: 70px;
+      margin-left: 10px;
+      background-color: #333; }
+      .mobileNavTest .container .mobileNavButton p {
+        float: right;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-right: 10px;
+        font-size: 20px;
+        color: #fff; }
+      .mobileNavTest .container .mobileNavButton .buttonLine {
+        position: absolute;
+        height: 6px;
+        width: 30px;
+        background-color: white; }
+      .mobileNavTest .container .mobileNavButton .lineTop {
+        top: 20px;
+        left: 10px; }
+      .mobileNavTest .container .mobileNavButton .lineMiddle {
+        top: 30px;
+        left: 10px; }
+      .mobileNavTest .container .mobileNavButton .lineBottom {
+        top: 40px;
+        left: 10px; }
+    .mobileNavTest .container .navButton {
+      display: inline-block;
+      width: 110px;
+      height: 70px;
+      margin-left: 10px; }
+    .mobileNavTest .container .lines-button {
+      width: 110px;
+      height: 70px;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      background-color: #333;
+      border: none;
+      padding: 0; }
+      .mobileNavTest .container .lines-button:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      .mobileNavTest .container .lines-button .lines {
+        display: inline-block;
+        height: 6px;
+        width: 30px;
+        background: #ecf0f1;
+        border-radius: 3px;
+        -webkit-transition: 0.3s;
+                transition: 0.3s;
+        position: relative; }
+      .mobileNavTest .container .lines-button .lines:before, .mobileNavTest .container .lines-button .lines:after {
+        display: inline-block;
+        height: 6px;
+        width: 30px;
+        background: #ecf0f1;
+        border-radius: 3px;
+        -webkit-transition: 0.3s;
+                transition: 0.3s;
+        position: absolute;
+        left: 0;
+        content: "";
+        -webkit-transform-origin: 0.28571rem center;
+        -ms-transform-origin: 0.28571rem center;
+            transform-origin: 0.28571rem center; }
+      .mobileNavTest .container .lines-button .lines:before {
+        top: 10px; }
+      .mobileNavTest .container .lines-button .lines:after {
+        top: -10px; }
+      .mobileNavTest .container .lines-button .x.open .lines {
+        background: transparent; }
+      .mobileNavTest .container .lines-button .x.open .lines:before, .mobileNavTest .container .lines-button .lines-button.x.open .lines:after {
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        top: 0;
+        width: 4rem; }
+      .mobileNavTest .container .lines-button .x.open .lines:before {
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+        transform: rotate3d(0, 0, 1, 45deg); }
+      .mobileNavTest .container .lines-button .x.open .lines:after {
+        -webkit-transform: rotate3d(0, 0, 1, -45deg);
+        transform: rotate3d(0, 0, 1, -45deg); }
+    .mobileNavTest .container .currentPage {
+      float: left; }
+      .mobileNavTest .container .currentPage .logo {
+        display: inline-block;
+        float: left;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        height: 70px;
+        color: #fff;
+        background-color: #1f7f8e; }
+      .mobileNavTest .container .currentPage .crumbPath {
+        display: inline-block;
+        float: left;
+        text-decoration: none;
+        margin-left: 10px;
+        padding: 4px;
+        margin-top: 20px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #333; }
+      .mobileNavTest .container .currentPage .pageTitle {
+        display: inline-block;
+        float: left;
+        margin-top: 23px;
+        padding-left: 10px;
+        color: #fff; }
+    .mobileNavTest .container .mainNavList {
+      float: right; }
+      .mobileNavTest .container .mainNavList li {
+        display: inline; }
+        .mobileNavTest .container .mainNavList li a {
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: bold;
+          color: #FFF;
+          padding: 30px;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out; }
+          .mobileNavTest .container .mainNavList li a:hover {
+            color: #2284a1; }
+
+.visible {
+  display: block; }
+
+.notVisible {
+  display: none; }
 
 .container {
   max-width: 1000px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .skills .container {
   max-width: 1000px;
-  margin: 0 auto;
-}
-.skills .container ul {
-  text-align: center;
-  padding: 10px 20px;
-}
-.skills .container p {
-  width: 100%;
-  padding-bottom: 20px;
-  margin-bottom: 0;
-}
+  margin: 0 auto; }
+  .skills .container ul {
+    text-align: center;
+    padding: 10px 20px; }
+  .skills .container p {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 0; }
 
 .header {
   background: url(images/Toronto1.jpg);
@@ -309,142 +409,116 @@ nav li a:hover {
   height: 100%;
   background-attachment: fixed;
   background-position: bottom;
-  padding-top: 0;
-}
-.header .banner {
-  position: relative;
-  background-color: #3A2A28;
-  background: url(images/dark-wood-70.png);
-  /*http://thepatternlibrary.com/*/
-  /*opacity: 0.7;*/
-  top: 150px;
-  width: 600px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
-  border: 2px solid #FFF;
-}
-.header .banner h2 {
-  font-size: 60px;
-  font-weight: 100;
-  padding-top: 0;
-}
-.header .banner .button {
-  text-align: center;
-  border: 1px solid #fff;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  /*margin-top: 250px;*/
-  padding: 20px;
-  border-radius: 5px;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-.header .banner .button a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-.header .banner .button:hover {
-  background-color: #1f7f8e;
-}
+  padding-top: 0; }
+  .header .banner {
+    position: relative;
+    background-color: #3A2A28;
+    background: url(images/dark-wood-70.png);
+    /*http://thepatternlibrary.com/*/
+    /*opacity: 0.7;*/
+    top: 150px;
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 2px solid #FFF; }
+    .header .banner h2 {
+      font-size: 60px;
+      font-weight: 100;
+      padding-top: 0; }
+    .header .banner .button {
+      text-align: center;
+      border: 1px solid #fff;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      /*margin-top: 250px;*/
+      padding: 20px;
+      border-radius: 5px;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      .header .banner .button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px; }
+      .header .banner .button:hover {
+        background-color: #1f7f8e; }
 
 .about {
-  background-color: #CAC8C7;
-}
-.about .intro {
-  width: 100%;
-  float: left;
-}
-.about .intro .introImg {
-  display: inline-block;
-  width: 30%;
-  float: left;
-}
-.about .intro .introImg img {
-  border-radius: 20px;
-  width: 100%;
-}
-.about .intro .introRight {
-  display: inline-block;
-  width: 70%;
-  float: right;
-  padding-left: 60px;
-}
-.about .intro .introRight h3 {
-  margin-top: 0;
-  text-align: left;
-}
-.about .interests {
-  width: 100%;
-  float: left;
-  padding-bottom: 20px;
-}
-.about .interests .cities {
-  display: inline-block;
-  width: 30%;
-  float: left;
-  margin-right: 5%;
-}
-.about .interests .tedx {
-  display: inline-block;
-  width: 30%;
-  float: left;
-  margin-right: 5%;
-}
-.about .interests .printing {
-  display: inline-block;
-  width: 30%;
-  float: left;
-}
-.about .interests img {
-  width: 100%;
-  border-radius: 20px;
-}
+  background-color: #CAC8C7; }
+  .about .intro {
+    width: 100%;
+    float: left; }
+    .about .intro .introImg {
+      display: inline-block;
+      width: 30%;
+      float: left; }
+      .about .intro .introImg img {
+        border-radius: 20px;
+        width: 100%; }
+    .about .intro .introRight {
+      display: inline-block;
+      width: 70%;
+      float: right;
+      padding-left: 60px; }
+      .about .intro .introRight h3 {
+        margin-top: 0;
+        text-align: left; }
+  .about .interests {
+    width: 100%;
+    float: left;
+    padding-bottom: 20px; }
+    .about .interests .cities {
+      display: inline-block;
+      width: 30%;
+      float: left;
+      margin-right: 5%; }
+    .about .interests .tedx {
+      display: inline-block;
+      width: 30%;
+      float: left;
+      margin-right: 5%; }
+    .about .interests .printing {
+      display: inline-block;
+      width: 30%;
+      float: left; }
+    .about .interests img {
+      width: 100%;
+      border-radius: 20px; }
 
 .skills {
   background: url(images/dark-wood.jpg);
   /*http://thepatternlibrary.com/*/
-  opacity: 0.9;
-}
-.skills ul {
-  vertical-align: middle;
-  list-style: none;
-  color: #fff;
-}
-.skills img {
-  height: 150px;
-  padding-left: 100px;
-}
-.skills .design {
-  display: inline-block;
-  width: 33%;
-}
-.skills .develop {
-  display: inline-block;
-  width: 33%;
-}
-.skills .learning {
-  display: inline-block;
-  width: 33%;
-}
+  opacity: 0.9; }
+  .skills ul {
+    vertical-align: middle;
+    list-style: none;
+    color: #fff; }
+  .skills img {
+    height: 150px;
+    padding-left: 100px; }
+  .skills .design {
+    display: inline-block;
+    width: 33%; }
+  .skills .develop {
+    display: inline-block;
+    width: 33%; }
+  .skills .learning {
+    display: inline-block;
+    width: 33%; }
 
 .skillsIntro,
 .contactIntro {
   color: #e0b152;
   padding-bottom: 60px;
   font-size: 25px;
-  text-align: center;
-}
+  text-align: center; }
 
 .portfolio,
 .about {
   background-color: #f7f4ed;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
 
 .portfolio .portfolioItem {
   float: left;
@@ -452,20 +526,22 @@ nav li a:hover {
   border-left: 1px solid #1f7f8e;
   padding-left: 15px;
   padding-bottom: 15px;
-  margin-bottom: 40px;
-}
-.portfolio .portfolioItem .portfolioImage {
-  display: inline-block;
-  width: 50%;
-  float: left;
-}
-.portfolio .portfolioItem .portfolioImage img {
-  width: 80%;
-}
-.portfolio .portfolioItem .portfolioDescription {
-  display: inline-block;
-  width: 50%;
-}
+  margin-bottom: 40px; }
+  .portfolio .portfolioItem .portfolioImage {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left; }
+    .portfolio .portfolioItem .portfolioImage img {
+      width: 80%; }
+    .portfolio .portfolioItem .portfolioImage .iPhoneImage {
+      position: absolute;
+      width: 100px;
+      bottom: 0;
+      right: 50px; }
+  .portfolio .portfolioItem .portfolioDescription {
+    display: inline-block;
+    width: 50%; }
 
 .portfolioDescription a,
 .interests a,
@@ -473,70 +549,54 @@ nav li a:hover {
   text-decoration: none;
   color: #e0b152;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  border-bottom: 1px solid transparent;
-}
+  border-bottom: 1px solid transparent; }
 
 .portfolioDescription a:hover,
 .interests a:hover,
 .about a:hover {
   color: #1f7f8e;
-  border-bottom: 1px solid #1f7f8e;
-}
+  border-bottom: 1px solid #1f7f8e; }
 
 footer {
   background: url(images/dark-wood.jpg);
   /*http://thepatternlibrary.com/*/
-  opacity: 0.9;
-}
-footer .contactIntro {
-  padding-bottom: 0;
-}
-footer .contactIntro a {
-  color: #e0b152;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-footer .contactIntro a:hover {
-  color: #1f7f8e;
-}
-footer .socialWrapper {
-  padding: 40px;
-  width: 73%;
-  margin: 0 auto;
-  text-align: center;
-}
-footer .socialWrapper .icon {
-  display: inline-block;
-  border: 3px solid #fff;
-  width: 55px;
-  height: 55px;
-  border-radius: 10px;
-  padding-left: 4px;
-  padding-top: 5px;
-  margin-right: 20px;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-footer .socialWrapper .icon img {
-  width: 40px;
-}
-footer .socialWrapper .icon:hover {
-  background-color: #1f7f8e;
-}
-footer .socialWrapper .mail {
-  padding-left: 2px;
-}
-footer .socialWrapper .gitHub {
-  /*Tried .icon:last-child -> didn't work*/
-  margin-right: 0;
-}
-footer .socialWrapper .copy {
-  margin-top: 40px;
-  color: #e0b152;
-  font-family: source-regular, Arial, Helvetica;
-  font-size: 20px;
-}
+  opacity: 0.9; }
+  footer .contactIntro {
+    padding-bottom: 0; }
+    footer .contactIntro a {
+      color: #e0b152;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      footer .contactIntro a:hover {
+        color: #1f7f8e; }
+  footer .socialWrapper {
+    padding: 40px;
+    width: 73%;
+    margin: 0 auto;
+    text-align: center; }
+    footer .socialWrapper .icon {
+      display: inline-block;
+      border: 3px solid #fff;
+      width: 55px;
+      height: 55px;
+      border-radius: 10px;
+      padding-left: 4px;
+      padding-top: 5px;
+      margin-right: 20px;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      footer .socialWrapper .icon img {
+        width: 40px; }
+      footer .socialWrapper .icon:hover {
+        background-color: #1f7f8e; }
+    footer .socialWrapper .mail {
+      padding-left: 2px; }
+    footer .socialWrapper .gitHub {
+      /*Tried .icon:last-child -> didn't work*/
+      margin-right: 0; }
+    footer .socialWrapper .copy {
+      margin-top: 40px;
+      color: #e0b152;
+      font-family: source-regular, Arial, Helvetica;
+      font-size: 20px; }

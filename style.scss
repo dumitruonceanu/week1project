@@ -25,6 +25,11 @@
 	src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
 }
 
+@font-face{
+	font-family: monserrat;
+	src: url('fonts/julieta-ulanovsky_montserrat/Montserrat-Regular.ttf');
+}
+
 .blue{
 	color: #1f7f8e;;
 }
@@ -82,6 +87,7 @@ html{
 nav{
 	width: 100%;
 	background: url(images/dark-wood.jpg);
+	// background-color: yellow;
 	position: fixed;
 	z-index: 100;
 	// opacity: 0.95;
@@ -105,11 +111,201 @@ nav{
 }
 
 
+.mobileNavTest{
+	width: 100%;
+	background: url(images/dark-wood.jpg);
+	position: fixed;
+	z-index: 100;
+	text-align: center;
+	font-size: 16px;
+	height: 70px;
+	.container{
+		display: inline-block;
+		float: left;
+		width: 100%;
+		// max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+			.mobileNavButton{
+				position: relative;
+				display: inline-block;
+				float: left;
+				width: 110px;
+				height: 70px;
+				margin-left: 10px;
+				background-color: #333;
+				p{
+					float: right;
+					margin: 0;
+					padding: 0;
+					margin-top: 20px;
+					margin-right: 10px;
+					font-size: 20px;
+					color: #fff;
+				}
+				.buttonLine{
+					position: absolute;
+					height:6px;
+					width:30px;
+					background-color:white;
+				}
+				.lineTop{
+					top:20px;
+					left:10px;
+				}
+				.lineMiddle{
+					top: 30px;
+					left:10px;
+				}
+				.lineBottom{
+					top: 40px;
+					left:10px;
+				}
+			}
+			.navButton{
+				display: inline-block;
+				width: 110px;
+				height: 70px;
+				margin-left: 10px;
+
+			}
+			.lines-button {
+				width: 110px;
+				height: 70px;
+				cursor: pointer;
+				user-select: none;
+				background-color: #333;
+				border: none;
+				padding: 0;
+				&:focus{
+					-moz-box-shadow: none;
+					-webkit-box-shadow: none;
+					box-shadow: none;
+				}
+				.lines {
+				display: inline-block;
+				height:6px;
+				width:30px;
+				background: #ecf0f1;
+				border-radius: 3px;
+				transition: 0.3s;
+				position: relative;
+				}
+				.lines:before, .lines:after {
+				display: inline-block;
+				height:6px;
+				width:30px;
+				background: #ecf0f1;
+				border-radius: 3px;
+				transition: 0.3s;
+				position: absolute;
+				left: 0;
+				content: "";
+				-webkit-transform-origin: 0.28571rem center;
+				transform-origin: 0.28571rem center;
+				}
+				.lines:before {
+				top: 10px;
+				}
+				.lines:after {
+				top: -10px;
+				}
+				.x.open .lines {
+				  background: transparent;
+				}
+				.x.open .lines:before, .lines-button.x.open .lines:after {
+				  -webkit-transform-origin: 50% 50%;
+				  transform-origin: 50% 50%;
+				  top: 0;
+				  width: 4rem;
+				}
+				.x.open .lines:before {
+				  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+				  transform: rotate3d(0, 0, 1, 45deg);
+				}
+				.x.open .lines:after {
+				  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+				  transform: rotate3d(0, 0, 1, -45deg);
+				}
+			}
+
+			.currentPage{
+				float: left;
+				.logo{
+					display: inline-block;
+					float: left;
+					font-size: 20px;
+					font-weight: 400;
+					text-decoration: none;
+					margin: 0;
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-top: 20px;
+					height: 70px;
+					color: #fff;
+					background-color: #1f7f8e;
+				}
+				.crumbPath{
+					display: inline-block;
+					float: left;
+					text-decoration: none;
+					margin-left: 10px;
+					padding: 4px;
+					margin-top: 20px;
+					border-radius: 4px;
+					color: #fff;
+					background-color: #333;
+				}
+				.pageTitle{
+					display: inline-block;
+					float: left;
+					margin-top: 23px;
+					padding-left: 10px;
+					color: #fff;
+				}
+			}
+
+			.mainNavList{
+				float: right;
+				li{
+					display:inline;
+					a{
+						text-decoration: none;
+						font-size: 20px;
+						font-weight: bold;
+						color: #FFF;
+						padding: 30px;
+						-webkit-transition: 0.2s ease-in-out;
+						-o-transition: 0.2s ease-in-out;
+						transition: 0.2s ease-in-out;
+						&:hover{
+							color: #2284a1; 
+						}
+					}
+				}
+			}
+		
+	}
+	
+	
+}
+
+.visible{
+	display: block;
+}
+
+.notVisible{
+	display: none;
+}
+
+
 // container applies to multiple classes
 .container{
 	max-width: 1000px;
 	margin: 0 auto;
 }
+
+
 
 .skills{
 	.container{
@@ -283,11 +479,18 @@ nav{
 		padding-bottom: 15px;
 		margin-bottom: 40px;
 		.portfolioImage{
+			position: relative;
 			display: inline-block;
 			width: 50%;
 			float: left;
 				img{
 					width: 80%;
+				}
+				.iPhoneImage{
+					position: absolute;
+					width: 100px;
+					bottom: 0;
+					right: 50px;
 				}
 		}
 		.portfolioDescription {

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nav Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="icons/D-icon-blue.ico">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	
+	<div class="mobileNavTest">
+		<div class="container">
+
+				<a class="mobileNavButton" href="#">
+					<p>MENU</p>
+					<div class="buttonLine lineTop"></div>
+					<div class="buttonLine lineMiddle"></div>
+					<div class="buttonLine lineBottom"></div>
+				</a>
+
+				<!-- <button type="navButton" class="lines-button x">
+					<span class="lines"></span>
+				</button> -->
+
+				<!-- <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x">
+					<span class="lines"></span>
+				</button> -->
+
+				<div class="currentPage visible">
+					<!-- <p class="logo">onceanu.com</p> -->
+					<a class="logo" href="/#home">onceanu.com</a>
+					<!-- <p class="crumbPath">Portfolio</p> -->
+					<a class="crumbPath" href="/#portfolio">Portfolio</a>
+					<p class="pageTitle">JourneyMade project demonstration site</p>
+				</div>
+
+				<ul class="mainNavList notVisible">
+					<li><a href="/#home">Home</a></li>
+					<li><a href="/#about">About</a></li>
+					<li><a href="/#skills">Skills</a></li>
+					<li><a href="/#portfolio">Portfolio</a></li>
+					<li><a href="/#contact">Contact</a></li>
+					<li><a href="http://dumitruonceanu.wordpress.com/" target="_blank">Blog</a></li>
+				</ul>
+
+		</div>
+	</div>
+
+	<script>
+
+		// functions to add and remove the visible class to the bioWrapper div, which by default is display:none
+		$('.mobileNavButton').click(function(){
+			console.log("click function");
+			$('.mainNavList').toggleClass('notVisible');
+			$('.mainNavList').toggleClass('visible');
+
+			$('.currentPage').toggleClass('visible');
+			$('.currentPage').toggleClass('notVisible');
+		});
+
+		//script for buttons
+		var anchor = document.querySelectorAll('navButton');
+		    
+		    [].forEach.call(anchor, function(anchor){
+		      var open = false;
+		      anchor.onclick = function(event){
+		        event.preventDefault();
+		        if(!open){
+		          this.classList.add('close');
+		          open = true;
+		        }
+		        else{
+		          this.classList.remove('close');
+		          open = false;
+		        }
+		      }
+		    }); 
+
+
+	</script>
+
+
+</body>
+</html>
