@@ -6,7 +6,9 @@ module.exports = function(grunt) {
 	   	dist: {
 	   		files:{
 	   			//destination: source files
-	   			'style.css': 'style.scss'
+	   			'style.css': 'style.scss',
+	   			'navButtonStyle.css': 'navButtonStyle.scss',
+	   			'navStyleTest.css': 'navStyleTest.scss'
 	   		}
 	   	}
 	   },

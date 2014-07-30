@@ -7,38 +7,41 @@
 	<link rel="icon" type="image/png" href="icons/D-icon-blue.ico">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
+
 	
 	<div class="mobileNavTest">
 		<div class="container">
 
 				<a class="mobileNavButton" href="#">
+					<button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x">
+					    <span class="lines"></span>
+					</button>
 					<p>MENU</p>
-					<div class="buttonLine lineTop"></div>
-					<div class="buttonLine lineMiddle"></div>
-					<div class="buttonLine lineBottom"></div>
 				</a>
 
-				<!-- <button type="navButton" class="lines-button x">
-					<span class="lines"></span>
-				</button> -->
-
-				<!-- <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x">
-					<span class="lines"></span>
-				</button> -->
+				
 
 				<div class="currentPage visible">
-					<!-- <p class="logo">onceanu.com</p> -->
 					<a class="logo" href="/#home">onceanu.com</a>
-					<!-- <p class="crumbPath">Portfolio</p> -->
+					<div class="triangleRight first"></div>
 					<a class="crumbPath" href="/#portfolio">Portfolio</a>
+					<div class="triangleRight second"></div>
 					<p class="pageTitle">JourneyMade project demonstration site</p>
 				</div>
 
 				<ul class="mainNavList notVisible">
 					<li><a href="/#home">Home</a></li>
-					<li><a href="/#about">About</a></li>
+					<li class="aboutDropdown"><a href="/#about">About <span class="arrow">&#x25BC;</span></a>
+						<ul class="subNav">
+							<h3>Other Interests</h3>
+							<li><a href="#">3D Printing</a></li>
+							<li><a href="#">TED</a></li>
+							<li><a href="#">Cities</a></li>
+						</ul>
+					</li>
 					<li><a href="/#skills">Skills</a></li>
 					<li><a href="/#portfolio">Portfolio</a></li>
 					<li><a href="/#contact">Contact</a></li>
@@ -52,32 +55,36 @@
 
 		// functions to add and remove the visible class to the bioWrapper div, which by default is display:none
 		$('.mobileNavButton').click(function(){
-			console.log("click function");
-			$('.mainNavList').toggleClass('notVisible');
-			$('.mainNavList').toggleClass('visible');
-
-			$('.currentPage').toggleClass('visible');
-			$('.currentPage').toggleClass('notVisible');
+			$('.mainNavList').toggleClass('notVisible visible');
+			$('.currentPage').toggleClass('visible notVisible');
 		});
 
-		//script for buttons
-		var anchor = document.querySelectorAll('navButton');
-		    
-		    [].forEach.call(anchor, function(anchor){
-		      var open = false;
-		      anchor.onclick = function(event){
-		        event.preventDefault();
-		        if(!open){
-		          this.classList.add('close');
-		          open = true;
-		        }
-		        else{
-		          this.classList.remove('close');
-		          open = false;
-		        }
-		      }
-		    }); 
 
+
+		//script for buttons
+		// var anchor = document.querySelectorAll('button');
+		// var anchor = document.querySelectorAll('button');
+	    
+	 //    [].forEach.call(anchor, function(anchor){
+	 //      var open = false;
+	 //      anchor.onclick = function(event){
+	 //        event.preventDefault();
+	 //        if(!open){
+	 //          this.classList.add('close');
+	 //          open = true;
+	 //        }
+	 //        else{
+	 //          this.classList.remove('close');
+	 //          open = false;
+	 //        }
+	 //      }
+	 //    });
+
+		//****testing jQuery with mobieNavButton
+	    $('.mobileNavButton').on('click', function(){
+	    	$('.lines-button.x').toggleClass('close');
+	    });
+			
 
 	</script>
 

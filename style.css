@@ -211,25 +211,6 @@ body,
 html {
   height: 100%; }
 
-nav {
-  width: 100%;
-  background: url(images/dark-wood.jpg);
-  position: fixed;
-  z-index: 100;
-  text-align: center; }
-  nav li {
-    display: inline; }
-    nav li a {
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
-      color: #FFF;
-      padding: 30px;
-      -webkit-transition: 0.2s ease-in-out;
-      transition: 0.2s ease-in-out; }
-      nav li a:hover {
-        color: #2284a1; }
-
 .mobileNavTest {
   width: 100%;
   background: url(images/dark-wood.jpg);
@@ -248,10 +229,11 @@ nav {
       position: relative;
       display: inline-block;
       float: left;
-      width: 110px;
+      width: 150px;
       height: 70px;
-      margin-left: 10px;
       background-color: #333; }
+      .mobileNavTest .container .mobileNavButton button {
+        float: left; }
       .mobileNavTest .container .mobileNavButton p {
         float: right;
         margin: 0;
@@ -260,80 +242,6 @@ nav {
         margin-right: 10px;
         font-size: 20px;
         color: #fff; }
-      .mobileNavTest .container .mobileNavButton .buttonLine {
-        position: absolute;
-        height: 6px;
-        width: 30px;
-        background-color: white; }
-      .mobileNavTest .container .mobileNavButton .lineTop {
-        top: 20px;
-        left: 10px; }
-      .mobileNavTest .container .mobileNavButton .lineMiddle {
-        top: 30px;
-        left: 10px; }
-      .mobileNavTest .container .mobileNavButton .lineBottom {
-        top: 40px;
-        left: 10px; }
-    .mobileNavTest .container .navButton {
-      display: inline-block;
-      width: 110px;
-      height: 70px;
-      margin-left: 10px; }
-    .mobileNavTest .container .lines-button {
-      width: 110px;
-      height: 70px;
-      cursor: pointer;
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-      background-color: #333;
-      border: none;
-      padding: 0; }
-      .mobileNavTest .container .lines-button:focus {
-        -webkit-box-shadow: none;
-        box-shadow: none; }
-      .mobileNavTest .container .lines-button .lines {
-        display: inline-block;
-        height: 6px;
-        width: 30px;
-        background: #ecf0f1;
-        border-radius: 3px;
-        -webkit-transition: 0.3s;
-                transition: 0.3s;
-        position: relative; }
-      .mobileNavTest .container .lines-button .lines:before, .mobileNavTest .container .lines-button .lines:after {
-        display: inline-block;
-        height: 6px;
-        width: 30px;
-        background: #ecf0f1;
-        border-radius: 3px;
-        -webkit-transition: 0.3s;
-                transition: 0.3s;
-        position: absolute;
-        left: 0;
-        content: "";
-        -webkit-transform-origin: 0.28571rem center;
-        -ms-transform-origin: 0.28571rem center;
-            transform-origin: 0.28571rem center; }
-      .mobileNavTest .container .lines-button .lines:before {
-        top: 10px; }
-      .mobileNavTest .container .lines-button .lines:after {
-        top: -10px; }
-      .mobileNavTest .container .lines-button .x.open .lines {
-        background: transparent; }
-      .mobileNavTest .container .lines-button .x.open .lines:before, .mobileNavTest .container .lines-button .lines-button.x.open .lines:after {
-        -webkit-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-        top: 0;
-        width: 4rem; }
-      .mobileNavTest .container .lines-button .x.open .lines:before {
-        -webkit-transform: rotate3d(0, 0, 1, 45deg);
-        transform: rotate3d(0, 0, 1, 45deg); }
-      .mobileNavTest .container .lines-button .x.open .lines:after {
-        -webkit-transform: rotate3d(0, 0, 1, -45deg);
-        transform: rotate3d(0, 0, 1, -45deg); }
     .mobileNavTest .container .currentPage {
       float: left; }
       .mobileNavTest .container .currentPage .logo {
@@ -349,28 +257,44 @@ nav {
         height: 70px;
         color: #fff;
         background-color: #1f7f8e; }
+      .mobileNavTest .container .currentPage .triangleRight {
+        display: inline-block;
+        float: left;
+        width: 0;
+        height: 0; }
+      .mobileNavTest .container .currentPage .first {
+        border-top: 35px solid #333;
+        border-left: 20px solid #1f7f8e;
+        border-bottom: 35px solid #333; }
+      .mobileNavTest .container .currentPage .second {
+        border-top: 35px solid transparent;
+        border-left: 20px solid #333;
+        border-bottom: 35px solid transparent; }
       .mobileNavTest .container .currentPage .crumbPath {
+        position: relative;
         display: inline-block;
         float: left;
         text-decoration: none;
-        margin-left: 10px;
-        padding: 4px;
-        margin-top: 20px;
-        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 23px;
+        height: 70px;
         color: #fff;
         background-color: #333; }
       .mobileNavTest .container .currentPage .pageTitle {
         display: inline-block;
         float: left;
-        margin-top: 23px;
+        margin-top: 20px;
         padding-left: 10px;
         color: #fff; }
     .mobileNavTest .container .mainNavList {
       float: right; }
       .mobileNavTest .container .mainNavList li {
-        display: inline; }
+        display: inline;
+        position: relative; }
         .mobileNavTest .container .mainNavList li a {
           text-decoration: none;
+          position: relative;
           font-size: 20px;
           font-weight: bold;
           color: #FFF;
@@ -379,6 +303,98 @@ nav {
           transition: 0.2s ease-in-out; }
           .mobileNavTest .container .mainNavList li a:hover {
             color: #2284a1; }
+        .mobileNavTest .container .mainNavList li:hover ul {
+          display: block; }
+        .mobileNavTest .container .mainNavList li:hover > a {
+          color: #26c1d9; }
+      .mobileNavTest .container .mainNavList .aboutDropdown:hover > a {
+        border-bottom: none; }
+
+.subNav {
+  /*general subnav styling*/
+  color: #fff;
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 38px;
+  right: 0px;
+  border: 1px solid #fff;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  width: 160%;
+  background-color: #000;
+  z-index: 10; }
+
+.lines-button {
+  display: inline-block;
+  margin-top: 20px;
+  border: none;
+  background: none;
+  padding: 2rem 4rem 0.4;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 0.57143rem; }
+  .lines-button:hover {
+    opacity: 1; }
+    .lines-button:hover .lines:before {
+      top: 1.14286rem; }
+    .lines-button:hover .lines:after {
+      top: -1.14286rem; }
+  .lines-button:active {
+    -webkit-transition: 0;
+            transition: 0; }
+  .lines-button:focus {
+    outline-color: transparent;
+    outline-style: none; }
+  .lines-button .lines {
+    display: inline-block;
+    width: 4rem;
+    height: 0.57143rem;
+    background: #ecf0f1;
+    border-radius: 0.28571rem;
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+    position: relative; }
+    .lines-button .lines:before, .lines-button .lines:after {
+      display: inline-block;
+      width: 4rem;
+      height: 0.57143rem;
+      background: #ecf0f1;
+      border-radius: 0.28571rem;
+      -webkit-transition: 0.3s;
+              transition: 0.3s;
+      position: absolute;
+      left: 0;
+      content: "";
+      -webkit-transform-origin: 0.28571rem center;
+      -ms-transform-origin: 0.28571rem center;
+          transform-origin: 0.28571rem center; }
+    .lines-button .lines:before {
+      top: 1rem; }
+    .lines-button .lines:after {
+      top: -1rem; }
+
+.lines-button.close {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8);
+  transform: scale3d(0.8, 0.8, 0.8); }
+
+.lines-button.x.close .lines {
+  background: transparent; }
+  .lines-button.x.close .lines:before, .lines-button.x.close .lines:after {
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    top: 0;
+    width: 4rem; }
+  .lines-button.x.close .lines:before {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg); }
+  .lines-button.x.close .lines:after {
+    -webkit-transform: rotate3d(0, 0, 1, -45deg); }
 
 .visible {
   display: block; }

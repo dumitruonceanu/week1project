@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nav Button Test</title>
+	<link rel="stylesheet" type="text/css" href="navButtonStyle.css">
+	<link rel="icon" type="image/png" href="icons/D-icon-blue.ico">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+
+
+	<button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x">
+	    <span class="lines"></span>
+	</button>
+
+
+	<script>
+		//script for buttons
+		var anchor = document.querySelectorAll('button');
+		    
+		    [].forEach.call(anchor, function(anchor){
+		      var open = false;
+		      anchor.onclick = function(event){
+		        event.preventDefault();
+		        if(!open){
+		          this.classList.add('close');
+		          open = true;
+		        }
+		        else{
+		          this.classList.remove('close');
+		          open = false;
+		        }
+		      }
+		    });
+
+
+	</script>
+	
+</body>
+</html>
