@@ -25,11 +25,6 @@
 	src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
 }
 
-@font-face{
-	font-family: monserrat;
-	src: url('fonts/julieta-ulanovsky_montserrat/Montserrat-Regular.ttf');
-}
-
 .blue{
 	color: #1f7f8e;;
 }
@@ -84,165 +79,29 @@ html{
 
 
 
-
-.mobileNavTest{
+nav{
 	width: 100%;
 	background: url(images/dark-wood.jpg);
 	position: fixed;
 	z-index: 100;
+	// opacity: 0.95;
 	text-align: center;
-	font-size: 16px;
-	height: 70px;
-	.container{
-		display: inline-block;
-		float: left;
-		width: 100%;
-		// max-width: 1000px;
-		width: 100%;
-		margin: 0 auto;
-			.mobileNavButton{
-				position: relative;
-				display: inline-block;
-				float: left;
-				width: 150px;
-				height: 70px;
-				background-color: #333;
-				button{
-					float: left;
-				}
-				p{
-					float: right;
-					margin: 0;
-					padding: 0;
-					margin-top: 20px;
-					margin-right: 10px;
-					font-size: 20px;
-					color: #fff;
-				}
+	li{
+		display:inline;
+		a{
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: bold;
+			color: #FFF;
+			padding: 30px;
+			-webkit-transition: 0.2s ease-in-out;
+			-o-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
+			&:hover{
+				color: #2284a1; 
 			}
-
-			.currentPage{
-				float: left;
-				.logo{
-					display: inline-block;
-					float: left;
-					font-size: 20px;
-					font-weight: 400;
-					text-decoration: none;
-					margin: 0;
-					padding-left: 10px;
-					padding-right: 10px;
-					padding-top: 20px;
-					height: 70px;
-					color: #fff;
-					background-color: #1f7f8e;
-				}
-				.triangleRight{
-					display: inline-block;
-					float: left;
-					width: 0;
-					height: 0;
-				}
-				.first{
-					border-top: 35px solid #333;
-					border-left: 20px solid #1f7f8e;
-					border-bottom: 35px solid #333;
-				}
-				.second{
-					border-top: 35px solid transparent;
-					border-left: 20px solid #333;
-					border-bottom: 35px solid transparent;
-				}
-				.crumbPath{
-					position: relative;
-					display: inline-block;
-					float: left;
-					text-decoration: none;
-					// margin-left: 10px;
-					// padding: 4px;
-					// margin-top: 20px;
-					// border-radius: 4px;
-					padding-left: 10px;
-					padding-right: 10px;
-					padding-top: 23px;
-					height: 70px;
-					color: #fff;
-					background-color: #333;
-				}
-				.pageTitle{
-					display: inline-block;
-					float: left;
-					margin-top: 20px;
-					padding-left: 10px;
-					color: #fff;
-				}
-			}
-
-			.mainNavList{
-				float: right;
-				li{
-					display:inline;
-					position: relative;
-					a{
-						text-decoration: none;
-						position: relative;
-						font-size: 20px;
-						font-weight: bold;
-						color: #FFF;
-						padding: 30px;
-						-webkit-transition: 0.2s ease-in-out;
-						-o-transition: 0.2s ease-in-out;
-						transition: 0.2s ease-in-out;
-						&:hover{
-							color: #2284a1; 
-						}
-					}
-					&:hover ul{
-						display: block;
-					}
-					&:hover > a{
-						color: #26c1d9;
-					}
-				}
-				.aboutDropdown{
-					a{
-						// border: 1px solid #000;
-					}
-					&:hover > a{
-					
-						// border-color: #fff;
-						border-bottom: none;
-						// background-color: #000;
-					}
-				}
-			}
-		
+		}
 	}
-}
-
-.subNav{
-	/*general subnav styling*/
-	color: #fff;
-	display: none;
-	position: absolute;
-	text-align: center;
-	top: 38px;
-	right: 0px;
-	border: 1px solid #fff;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	width: 160%;
-	background-color: #000;
-	z-index: 10;
-}
-
-
-.visible{
-	display: block;
-}
-
-.notVisible{
-	display: none;
 }
 
 
@@ -251,8 +110,6 @@ html{
 	max-width: 1000px;
 	margin: 0 auto;
 }
-
-
 
 .skills{
 	.container{
