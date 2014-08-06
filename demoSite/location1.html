@@ -7,8 +7,47 @@
 	<link rel="icon" type="image/png" href="icons/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/libs/modernizr-2.5.3.min.js"></script>
+	<script src="js/mobileNavTest.js"></script>
 </head>
 <body>
+
+	<div class="mobileNavTest">
+		
+		<div class="container">
+				<div class="navLeftContainer"></div>
+				<a class="mobileNavButton">
+					<button type="button" role="button" aria-label="Toggle Navigation" class="buttonLines">
+					    <span class="lines"></span>
+					</button>
+					<p>MENU</p>
+				</a>
+
+				
+
+				<div class="currentPage visible">
+					<a class="logo" href="../index.html">onceanu.com</a>
+					<div class="triangleRight first"></div>
+					<a class="crumbPath" href="../index.html#portfolio">Portfolio</a>
+					<div class="triangleRight second"></div>
+					<p class="pageTitle">Coffee house demonstration site</p>
+				</div>
+
+				<ul class="mainNavList notVisible">
+					<li><a href="../index.html#home">Home</a></li>
+					<li><a href="../index.html#about">About</a></li>
+					<li><a href="../index.html#skills">Skills</a></li>
+					<li><a href="../index.html#portfolio">Portfolio</a></li>
+					<li><a href="../index.html#contact">Contact</a></li>
+					<li><a href="http://dumitruonceanu.wordpress.com/" target="_blank">Blog</a></li>
+				</ul>
+				<div class="navRightContainer"></div>
+		</div>
+		
+	</div>
 
 
 	<nav class="contentPages">
