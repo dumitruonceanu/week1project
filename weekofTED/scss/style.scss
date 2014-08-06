@@ -30,11 +30,288 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 body{
     position: relative;
+    margin-top: -70px;
 }
 
 strong {
     font-weight: 700;
 }
+
+.allPageContent{
+    display: block;
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+
+
+//***************************************************************
+//NEW STYLE ADDED FOR mobileNavTest
+//***************************************************************
+// container applies to multiple classes
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+.mobileNavTest{
+    width: 100%;
+    // background: url(images/dark-wood.jpg);
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    font-size: 16px;
+    height: 70px;
+    margin-top: 0;
+    z-index: 150;
+    box-shadow: 0 4px 10px #222;
+    .container{
+        display: inline-block;
+        background: url(../images/dark-wood.jpg);
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+            .navLeftContainer{
+                position: absolute;
+                left: -800px;
+                height: 70px;
+                background: url(../images/dark-wood.jpg);
+                z-index: 151;
+                width: 800px;   
+                overflow: hidden;
+            }   
+            .navRightContainer{
+                position: absolute;
+                right: -800px;
+                height: 70px;
+                background: url(../images/dark-wood.jpg);
+                z-index: 200;
+                width: 800px;   
+                overflow: hidden;
+            }
+            .mobileNavButton{
+                position: relative;
+                display: inline-block;
+                float: left;
+                width: 130px;
+                height: 70px;
+                background-color: #333;
+                z-index: 151;
+                -webkit-transition: 0.2s ease-in-out;
+                -o-transition: 0.2s ease-in-out;
+                transition: 0.2s ease-in-out;
+                button{
+                    float: left;
+                }
+                p{
+                    float: right;
+                    margin: 0;
+                    padding: 0;
+                    padding-top: 4px;
+                    margin-top: 20px;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    color: #fff;
+                }
+                &:hover{
+                    cursor:pointer
+                }
+                // &:hover{
+                //  opacity: 0.5;
+                //  -webkit-transition: 0.2s ease-in-out;
+                //  -o-transition: 0.2s ease-in-out;
+                //  transition: 0.2s ease-in-out;
+                // }
+            }
+
+            .currentPage{
+                position: absolute;
+                left: 130px;
+                .logo{
+                    display: inline-block;
+                    float: left;
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    margin: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 20px;
+                    height: 70px;
+                    color: #fff;
+                    background-color: #1f7f8e;
+                }
+                .triangleRight{
+                    display: inline-block;
+                    float: left;
+                    width: 0;
+                    height: 0;
+                }
+                .first{
+                    border-top: 35px solid #333;
+                    border-left: 20px solid #1f7f8e;
+                    border-bottom: 35px solid #333;
+                }
+                .second{
+                    border-top: 35px solid transparent;
+                    border-left: 20px solid #333;
+                    border-bottom: 35px solid transparent;
+                }
+                .crumbPath{
+                    display: inline-block;
+                    float: left;
+                    text-decoration: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 23px;
+                    height: 70px;
+                    color: #fff;
+                    background-color: #333;
+                }
+                .pageTitle{
+                    display: inline-block;
+                    float: left;
+                    margin-top: 24px;
+                    padding-left: 10px;
+                    color: #fff;
+                }
+            }
+
+            .mainNavList{
+                position: absolute;
+                right: -800px;
+                margin-top: 22px;
+                li{
+                    display:inline;
+                    position: relative;
+                    a{
+                        text-decoration: none;
+                        position: relative;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #FFF;
+                        padding: 30px;
+                        -webkit-transition: 0.2s ease-in-out;
+                        -o-transition: 0.2s ease-in-out;
+                        transition: 0.2s ease-in-out;
+                        &:hover{
+                            color: #2284a1; 
+                        }
+                    }
+                    &:hover ul{
+                        display: block;
+                    }
+                    &:hover > a{
+                        color: #26c1d9;
+                    }
+                }
+                .aboutDropdown{
+                    a{
+                        // border: 1px solid #000;
+                    }
+                    &:hover > a{
+                    
+                        // border-color: #fff;
+                        border-bottom: none;
+                        // background-color: #000;
+                    }
+                }
+            }
+        
+    }
+}
+
+
+//***************************************************************
+//STYLE FOR NEW HAMBURGER BUTTON
+//***************************************************************
+
+//general button styles
+.buttonLines{
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    background: none;
+    padding: 2px 6px;
+    transition: 0.3s;
+    border-radius: 6px;
+    &:focus{
+        outline-style: none;
+    }
+    .lines{
+        display: inline-block;
+        width: 40px;
+        height: 6px;
+        background: #fff;
+        border-radius: 3px;
+        transition: 0.3s;
+        position: relative;
+
+        &:before, &:after{
+            display: inline-block;
+            width: 40px;
+            height: 6px;
+            background: #fff;
+            border-radius: 3px;
+            transition: 0.3s;
+            position: absolute;
+            left: 0;
+            content: "";
+            -webkit-webkit-transform-origin: 3px center;
+            -moz-webkit-transform-origin: 3px center;
+            -ms-webkit-transform-origin: 3px center;
+            -o-webkit-transform-origin: 3px center;
+            transform-origin: 3px center;
+        }
+        &:before{
+            top: 10px;
+        }
+        &:after{
+            top: -10px;
+        }
+    }
+}
+
+//convert three horizontal lines to X shape, removing middle line and transforming the remaining two
+.buttonLines.close{
+    .lines{
+        background:transparent;
+        &:before, &:after{
+            top: 0;
+            -webkit-webkit-transform-origin: 50% 50%;
+            -moz-webkit-transform-origin: 50% 50%;
+            -ms-webkit-transform-origin: 50% 50%;
+            -o-webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        }
+        &:before{
+            -webkit-webkit-transform: rotate3d(0,0,1,45deg);
+            -moz-webkit-transform: rotate3d(0,0,1,45deg);
+            -ms-webkit-transform: rotate3d(0,0,1,45deg);
+            -o-webkit-transform: rotate3d(0,0,1,45deg);
+            transform: rotate3d(0,0,1,45deg);
+        }
+        &:after{
+            -webkit-webkit-transform: rotate3d(0,0,1,-45deg);
+            -moz-webkit-transform: rotate3d(0,0,1,-45deg);
+            -ms-webkit-transform: rotate3d(0,0,1,-45deg);
+            -o-webkit-transform: rotate3d(0,0,1,-45deg);
+            transform: rotate3d(0,0,1,-45deg);
+        }
+    }
+}
+
+//***************************************************************
+//END STYLE FOR NEW HAMBURGER BUTTON
+//***************************************************************
+
+
+
+
+
 
 .contain {
     max-width: 1440px;
